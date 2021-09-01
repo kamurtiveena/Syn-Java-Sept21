@@ -1,3 +1,16 @@
+Lab 6 - Create Lab2
+	Lab2 - Write two interfaces
+		Connection - open, close, describe
+		Transaction - begin, commit, describe
+		
+		Write a class to implement Connection interfaces without describe
+		main
+			test class by invoking describe (confirm describe of interface invoked)
+		Modify class to implement Connection and transaction interface
+			see compilation error for overriding describe method
+			override
+			and invoke
+---------------------------
 Lab 5 - Create Project Demo2
 	Lab1 - Write interface with 3 methods - m1, m2,m3
 		Write code for m3 
