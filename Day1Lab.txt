@@ -1,3 +1,7 @@
+Lab 7 - Lab3.java - Define interface with m1, m2, m3
+	Write code for m3 and make it static
+	try to invoke
+-----------------
 Lab 6 - Create Lab2
 	Lab2 - Write two interfaces
 		Connection - open, close, describe
