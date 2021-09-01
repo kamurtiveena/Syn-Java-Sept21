@@ -1,3 +1,84 @@
+Lab 4 - 
+import java.util.ArrayList;
+import java.util.List;
+
+class Dept{
+	private int deptno;
+	private String dname;
+	private String loc;
+	public int getDeptno() {
+		return deptno;
+	}
+	public void setDeptno(int deptno) {
+		this.deptno = deptno;
+	}
+	public String getDname() {
+		return dname;
+	}
+	public void setDname(String dname) {
+		this.dname = dname;
+	}
+	public String getLoc() {
+		return loc;
+	}
+	public void setLoc(String loc) {
+		this.loc = loc;
+	}
+	@Override
+	public String toString() {
+		return "Dept [deptno=" + deptno + ", dname=" + dname + ", loc=" + loc + "]";
+	}
+}
+@FunctionalInterface
+interface DeptDelete{
+	boolean deleteif(Dept d);
+}
+class DeptDAO{
+	// CRUD operations
+	List<Dept> list = new ArrayList<Dept>();
+	public void add(Dept d ) {
+		list.add(d);
+	}
+	public List<Dept> list(){return list;}
+	
+	public void delete(DeptDelete deletelogic) { 
+		for (Dept dept : list) {
+			if (deletelogic.deleteif(dept))
+				{
+				list.remove(dept);
+				break;
+				}
+		}
+		}
+}
+
+public class Lab4 {
+public static void main(String[] args) {
+	DeptDAO dao = new DeptDAO();
+	for (int i = 10;i< 100;i+=10)
+	{
+			Dept d= new Dept();
+			d.setDeptno(i);
+			d.setDname("Dnameof"+i);
+			if ( (i%20)==0)
+					d.setLoc("Hyd");
+			else
+					d.setLoc("Pune");
+			dao.add(d);
+	}
+	dao.list().forEach(System.out::println);
+    DeptDelete deletebydeptno = 	(d)->d.getDeptno()==20;
+	dao.delete(deletebydeptno); 
+	DeptDelete deletebydname = (d)->d.getDname().equals("Dnameof50");
+	dao.delete(deletebydname); 
+	dao.delete((d)->d.getLoc().equals("Hyd"));
+	System.out.println("-----------------List after deletion--------------------");
+	dao.list().forEach(System.out::println);
+	
+}
+}
+
+------------------------
 Lab 3 - Write/Design interface as Calc which should offer 4 operations like +,-,*,/
 -------------------------
 Lab 2 - 
