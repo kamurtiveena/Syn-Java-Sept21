@@ -1,3 +1,12 @@
+Lab 8 
+	modify any main method to include 
+		System.out.println("Press a number to continue");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextInt();
+	cmd>jconsole    
+	cmd>jvisualvm
+	select your application -> see the graph
+-------------------
 Lab 7 - Lab3.java - Define interface with m1, m2, m3
 	Write code for m3 and make it static
 	try to invoke
