@@ -1,3 +1,26 @@
+Lab 3 - Write/Design interface as Calc which should offer 4 operations like +,-,*,/
+-------------------------
+Lab 2 - 
+	interface Process{
+		int add(int no1, int no2);
+	}
+
+	public class Lab2 {
+
+		public static void main(String[] args) {
+			Process processImpl1 =   (int no1, int no2)  -> {
+				return no1+no2;
+			};
+			Process processImpl2 =   (i, j)  ->  i+j;
+			System.out.println(" add(100, 200) returned " + processImpl1.add(100, 200));
+			System.out.println(" add(1000, 200) returned " + processImpl2.add(100, 200));
+		}
+	}
+
+	Try writing one more methdo in Process -> check exception -> delete method
+	add @functionalinteface annotation to Process interface -> compile , run 
+	Try writing one more methdo in Process -> check exception -> 
+-------------------------
 Lab 1 - Create Java project called Demo1
     -> confirm compilation 1.8
   Write Lab1.java
