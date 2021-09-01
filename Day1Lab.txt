@@ -1,3 +1,18 @@
+Lab 5 - Create Project Demo2
+	Lab1 - Write interface with 3 methods - m1, m2,m3
+		Write code for m3 
+			-> will give you error -> make a default method
+			
+		Write two classes to implement this interface	
+			1. only m1 and m2
+			2. with all three
+		Write main method to create instance of both classes 
+			interfacename in = new Implementationclass()
+		invoke m1, m2,m3 methods for both the classes
+	Confirm -> if not overriden, default of interface would be called
+			   if overriden, class method would be called
+
+-------------------
 Lab 4 - 
 import java.util.ArrayList;
 import java.util.List;
