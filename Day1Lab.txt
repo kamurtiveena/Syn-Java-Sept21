@@ -1,0 +1,22 @@
+Lab 1 - Create Java project called Demo1
+    -> confirm compilation 1.8
+  Write Lab1.java
+    class Lab1Helper implements Runnable{
+      @Override
+      public void run() {
+        System.out.println("run of Lab1Helper invoked");
+      }
+    }*/
+    public class Lab1 {
+
+      public static void main(String[] args) {
+      	Runnable r1 = new Lab1Helper();
+        Thread t1 = new Thread(r1);
+        t1.start();
+      }
+    }
+    
+  Change runnable code to  Runnable r1 =  () -> 	System.out.println("run of Lab1Helper invoked");
+  Delete Lab1Helper ...
+  Test
+  
