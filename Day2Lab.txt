@@ -1,3 +1,31 @@
+Lab 2 - Convert 
+		interface Calc {
+			int operation(int a, int b );
+		}
+
+		interface Convert {
+			double converttoRs(int amt, String fromc);
+		}
+
+	these interfaces to function, operator
+	int sqr(int)
+	boolean isOdd(int)
+	void print(String)
+	int genrandomnum()
+
+1. Function
+	input parameters and some return value
+2. Operator
+	Input param and return of same type
+3. Predicate -> removeIf
+	input param but return will always be boolean
+4. Consumer -> list.forEach()
+	Input params but no return
+5. Supplier
+	No input, just output
+
+
+--------------------------------
 Lab 1 - Create new project (Demo4)
   Create Lab1 -> to show final / effectively final
   Create a functional interface as  
