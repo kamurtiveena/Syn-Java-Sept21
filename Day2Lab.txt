@@ -1,0 +1,13 @@
+Lab 1 - Create new project (Demo4)
+  Create Lab1 -> to show final / effectively final
+  Create a functional interface as  
+   interface Convert {
+	  int converttoRs(int dl);
+  }
+  Write main method to test
+    declare a variable for conversionrate outside lambda
+    use this variable in lambda
+    try to change the value of the variable in side lambda and outside
+    observe errors for final / effectively final
+ modify converttoRs method to accept one more parameter like conrate and pass it as an argument
+ 
